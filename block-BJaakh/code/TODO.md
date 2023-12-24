@@ -7,4 +7,4 @@
 - Using input add a new todo
 - Handle toggle (check/uncheck)
 - Clicking on delete/cross button can delete the todo
-- Double click to edit the individual todo
+- Double click to edit the individual todogiugiugug
