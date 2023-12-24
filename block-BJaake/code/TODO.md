@@ -5,7 +5,7 @@
 - Each news should contain image, title, source and read more button
 - Clicking on read me should take the user to the news url
 - It will also contain a dropdown with multiple news sources (`newsSite` property from the news object)
-- Selecting any specific news source will display news from that specific source only.
+- Selecting any specific news source will display news from that specific source only.sfadfd
 
 - Use browser function `fetch` to get data
 
