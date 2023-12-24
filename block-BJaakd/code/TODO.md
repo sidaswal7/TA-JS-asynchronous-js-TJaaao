@@ -2,9 +2,11 @@
 
 ```js
 let promise = new Promise((res,rej)=>{
-    res(setTimeout(()=>"Promise Resolved!"),1000)
+    setTimeout(()=>{
+        res("Promise Resolved!")}
+        ,1000);
 })
-.then((res)=>console.log(res))
+promise.then((msg)=>console.log(msg))
 ```
 
 2. Create another promise. Now have it reject with a value of `Rejected Promise!` without using `setTimeout`. Print the contents of the promise after it has been rejected by passing console.log to `.catch`
@@ -49,7 +51,17 @@ console.log('D');
 - Catch the error using `.catch`
 
 ```js
-// Your code
+let promise = new Promise((res, rej)=>{
+    res(21);
+}).then((value)=>{
+    return value + 10
+}).then ((value)=>{
+    return value + 200
+}).then((value)=>{
+    if (value>100){
+        throw new Error("Something went wrong")
+    }
+}).catch(console.log)
 ```
 
 7. Do the following:
@@ -61,7 +73,16 @@ console.log('D');
 - Use `.then` and log the value
 
 ```js
-// Your code
+let promise = new Promise((res,rej)=>{
+    res(['A'])
+}).then((value)=>{
+    return value.concat('B')
+}).then((value)+>{
+    return value.reduce((acc,cv,i)=>{
+        acc[i] = cv;
+        return acc;
+    },{});
+})
 ```
 
 8. Do the following:
