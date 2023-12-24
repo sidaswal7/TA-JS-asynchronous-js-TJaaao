@@ -1,6 +1,6 @@
 ### Update News App
 
-You have to update the News App we created in the previous exercise. Get the code from previous exercise. And make the following changes.
+You have to update the News App we created in the previous exercise. Get the code from previousasdasd exercise. And make the following changes.
 
 - Show a loading indicator when you are fetching the data
 - Handle the browser being offline
